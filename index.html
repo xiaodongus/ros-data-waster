@@ -408,7 +408,7 @@
         var threads = 8;
         var time = 0;
         var goal = 0;
-        var chunk = 1361527;
+        var chunk = 1500000;
         var stopped = false;
         var formatSize = function(size) {
             var o = filesize(size, {
@@ -448,7 +448,7 @@
                 }
             }
             if (running == true)
-                xhr[id] = $.get("https://img10.360buyimg.com/live/jfs/t1/128947/12/26918/1361527/6260e71bE0ee85af5/ecaa17ea8dd3dddb.jpg?" + Math.random(), function() {
+                xhr[id] = $.get("/dummy15?" + Math.random(), function() {
                     return download(id);
                 });
         };
